@@ -1,0 +1,61 @@
+@import 'variables';
+
+@each $color in $mud-palette-colors {
+  .mud-#{$color} {
+    background-color: var(--mud-palette-#{$color}) !important;
+  }
+
+  .mud-#{$color}-text {
+    color: var(--mud-palette-#{$color}) !important;
+  }
+
+  .mud-border-#{$color} {
+    border-color: var(--mud-palette-#{$color});
+  }
+
+  .mud-theme-#{$color} {
+    color: var(--mud-palette-#{$color}-text) !important;
+    background-color: var(--mud-palette-#{$color}) !important;
+  }
+}
+
+.mud-theme-transparent {
+  color: inherit !important;
+  background-color: transparent !important;
+}
+
+.mud-transparent {
+  background-color: transparent !important;
+}
+
+.mud-transparent-text {
+  color: transparent !important;
+}
+
+.mud-text-primary {
+  color: var(--mud-palette-text-primary);
+}
+
+.mud-text-secondary {
+  color: var(--mud-palette-text-secondary);
+}
+
+.mud-text-disabled {
+  color: var(--mud-palette-text-disabled);
+}
+
+.white {
+  background-color: #FFFFFF !important;
+}
+.white-text {
+  color: #FFFFFF !important;
+}
+
+.black {
+  background-color: #000000 !important;
+}
+
+.black-text {
+  color: #000000 !important;
+}
+

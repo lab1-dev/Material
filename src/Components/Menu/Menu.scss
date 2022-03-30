@@ -1,0 +1,16 @@
+.mud-menu {
+  display: inline-flex;
+  position: relative;
+
+  & * {
+    cursor: pointer;
+  }
+
+  & > div.mud-disabled {
+    cursor: default;
+
+    & * {
+      cursor: default;
+    }
+  }
+}

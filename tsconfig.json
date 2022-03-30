@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "module": "es6",
+    "target": "es5",
+    "declaration": true,//to generate d.ts files
+    "downlevelIteration": true,//to enable iterate over sets
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "inlineSources": true,//check if really needs this
+    "allowJs": true,
+    "jsx": "react",
+    "jsxFactory": "tsx",
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "lib": ["es2015","dom"]
+  },
+  "include": [
+    "index.ts"
+  ],
+  "exclude": ["node_modules"],
+  "typedocOptions": {
+    "mode": "file",
+    "out": "docs",
+    "excludePrivate": true,
+    "excludeNotExported": true,
+    "ignoreCompilerErrors": true,
+    "disableSources": true,
+    "stripInternal ": true
+  }
+}
