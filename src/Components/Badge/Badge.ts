@@ -102,7 +102,7 @@ export class Badge extends MaterialComponent implements BadgeProps {
         if (!StringHelper.isNullOrEmpty(this.badgeClass.value)) this.badgeClassName += ' ' + this.badgeClass.value;
     }
 
-    //todo esse metodo abaixo deve ficar automatico no Lab1Manager
+    //todo remove this method. This should be done automatically by Lab1Manager
     public addChildComponent(component:Component):void{
         //console.log('(Chip)addChildItem:',component);
         this.element=component.element;

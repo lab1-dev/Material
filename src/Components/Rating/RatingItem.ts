@@ -100,7 +100,7 @@ export class RatingItem extends MaterialComponent implements RatingItemProps{
 
     //Logic below====================================================
 
-    //todo esse metodo abaixo deve ficar automatico no Lab1Manager
+    //todo remove this method. This should be done automatically by Lab1Manager
     public addChildComponent(component:Component):void{
         //console.log('(Chip)addChildItem:',component);
         this.element=component.element;
